@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/Users/ast-lw/Desktop/TestVagrant/git-repos-I-am-working/restAssured/restAssured">
+        <classes>
+            <class name="tests_for_assignment2.testsForGetRequests.TestGetRequests">
+                <methods>
+                    <include name="statusCodeOfGetRequest"/>
+                    <include name="checkingSizeOfProductList"/>
+                </methods>
+            </class>
+            <class name="tests_for_assignment2.testsForPostRequests.TestPostRequests">
+                <methods>
+                    <include name="checkingIfProductAddedToCart"/>
+                    <include name="checkingStatusCodeForNewUser"/>
+                </methods>
+            </class>
+            <class name="tests_for_assignment3.testsForGetRequest.TestPojoGetRequest">
+                <methods>
+                    <include name="checkTheUserFirstName"/>
+                </methods>
+            </class>
+            <class name="tests_for_assignment3.testsForPostRequest.TestPojoPostRequest">
+                <methods>
+                    <include name="pojoExample"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
