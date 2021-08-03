@@ -72,6 +72,7 @@
     - [PojoPost](https://github.com/AST-LW-TV/restAssured/blob/main/restAssured/src/main/java/assignment3/PojoPost.java) - pojo format for post request
 - [assignment4](https://github.com/AST-LW-TV/restAssured/tree/main/restAssured/src/main/java/assignment4)
     - [MakeUpApi](https://github.com/AST-LW-TV/restAssured/blob/main/restAssured/src/main/java/assignment4/MakeUpApi.java) - makeup api for getting cosmetics products
+      
       ```
           Output of MakeUp api ( not prettified format )
           ----------------------------------------------
@@ -96,6 +97,7 @@
             ... 
       ```
     - [WeatherApi](https://github.com/AST-LW-TV/restAssured/blob/main/restAssured/src/main/java/assignment4/WeatherApi.java) - weather api for getting london climate info
+      
       ```
           Output of Weather Api ( prettified output )
           -------------------------------------------
