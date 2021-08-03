@@ -1,7 +1,6 @@
 package assignment3.details;
 
 public class GetDetailsPojoFormatChild2 {
-
     private String url;
     private String text;
 

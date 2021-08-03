@@ -15,8 +15,8 @@ public class TestPostRequests {
 
     @Test
     public void checkingIfProductAddedToCart(){
-        String[] values= GetDomainAndPath.getDomainAndPath(
-                new String[]{"FakeStorePostHostDomain","getPostIntoCartResourcePath"});
+        String[] values = GetDomainAndPath.getDomainAndPath(
+                new String[]{"FakeStorePostHostDomain", "getPostIntoCartResourcePath"});
         hostDomain=values[0];
         resourcePath=values[1];
         JsonPath js=postInstance.addToCart(hostDomain,resourcePath);
@@ -38,5 +38,4 @@ public class TestPostRequests {
         int statusCode=createNewUser.createNewUser(hostDomain,resourcePath);
         Assert.assertTrue(statusCode==201);
     }
-
 }

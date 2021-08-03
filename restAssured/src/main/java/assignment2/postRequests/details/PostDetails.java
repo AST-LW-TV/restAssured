@@ -1,8 +1,7 @@
 package assignment2.postRequests.details;
 
 public class PostDetails {
-
-    public static String postCartDetails(){
+    public static String postCartDetails() {
         return "{\n" +
                 "\"userId\":5,\n" +
                 "\"date\":\"2020-02-03\",\n" +
@@ -10,7 +9,7 @@ public class PostDetails {
                 "}";
     }
 
-    public static String postUserInformation(){
+    public static String postUserInformation() {
         return "{\n" +
                 "    \"name\": \"morpheus\",\n" +
                 "    \"job\": \"leader\"\n" +

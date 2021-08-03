@@ -1,7 +1,6 @@
 package assignment3.details;
 
 public class GetDetailsPojoFormatChild1 {
-
     private int id;
     private String email;
     private String first_name;
@@ -47,5 +46,4 @@ public class GetDetailsPojoFormatChild1 {
     public void setAvatar(String avatar) {
         this.avatar = avatar;
     }
-
 }

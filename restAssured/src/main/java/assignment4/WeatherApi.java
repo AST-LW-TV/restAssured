@@ -11,11 +11,11 @@ import static io.restassured.RestAssured.given;
 
 public class WeatherApi {
 
-    private static String hostDomain;
-    private static String resourcePath;
+    private String hostDomain;
+    private String resourcePath;
     private JsonPath js;
 
-    public static void weatherApi(){
+    public String weatherApi(){
         String[] values= GetDomainAndPath.getDomainAndPath(
                 new String[]{"WeatherApiHostDomain","getWeatherApiResourcePath"});
         hostDomain=values[0];
@@ -29,19 +29,6 @@ public class WeatherApi {
                 .when().get(resourcePath)
                 .then()
                 .extract().response();
-        String responseStringFormat=response.asString();
-        JSONObject json= null;
-        try {
-            json = new JSONObject(responseStringFormat);
-            json.toString(4);
-            System.out.println(json.toString(4));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+        return response.asString();
     }
-
-    public static void main(String[] args){
-        weatherApi();
-    }
-
 }

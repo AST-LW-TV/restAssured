@@ -1,7 +1,6 @@
 package assignment3.details;
 
 public class GetDetailsPojoFormatParent {
-
     private GetDetailsPojoFormatChild1 data;
     private GetDetailsPojoFormatChild2 support;
 

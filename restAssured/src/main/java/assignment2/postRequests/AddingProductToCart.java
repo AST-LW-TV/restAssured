@@ -9,16 +9,14 @@ import utilities.StringToJson;
 import static io.restassured.RestAssured.given;
 
 public class AddingProductToCart {
-
-    public JsonPath addToCart(String hostDomain, String resourcePath){
-        RestAssured.baseURI=hostDomain;
-        Response response=given()
-                .header("Content-Type","application/json")
+    public JsonPath addToCart(String hostDomain, String resourcePath) {
+        RestAssured.baseURI = hostDomain;
+        Response response = given()
+                .header("Content-Type", "application/json")
                 .body(PostDetails.postCartDetails())
                 .when().post(resourcePath)
                 .then().extract().response();
-        String responseStringFormat=response.asString();
+        String responseStringFormat = response.asString();
         return StringToJson.ConversionToJson(responseStringFormat);
     }
-
 }

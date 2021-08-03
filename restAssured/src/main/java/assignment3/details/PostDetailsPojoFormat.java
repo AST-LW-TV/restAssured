@@ -1,7 +1,6 @@
 package assignment3.details;
 
 public class PostDetailsPojoFormat {
-
     private String name;
     private String job;
 

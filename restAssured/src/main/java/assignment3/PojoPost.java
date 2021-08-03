@@ -8,17 +8,15 @@ import utilities.StringToJson;
 import static io.restassured.RestAssured.given;
 
 public class PojoPost {
-
-    public JsonPath postTheUser(String hostDomain,String resourcePath,String postDetails){
-        RestAssured.baseURI=hostDomain;
-        Response response=given()
-                .header("Content-Type","application/json")
+    public JsonPath postTheUser(String hostDomain, String resourcePath, String postDetails) {
+        RestAssured.baseURI = hostDomain;
+        Response response = given()
+                .header("Content-Type", "application/json")
                 .body(postDetails)
                 .when().post(resourcePath)
                 .then()
                 .extract().response();
-        String responseStringFormat=response.asString();
+        String responseStringFormat = response.asString();
         return StringToJson.ConversionToJson(responseStringFormat);
     }
-
 }
