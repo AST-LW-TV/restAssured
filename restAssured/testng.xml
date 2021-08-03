@@ -1,7 +1,0 @@
-<suite name="rest api test suite">
-    <test name="get request tests">
-        <classes>
-            <class name="tests_for_assignment2.testsForGetRequests.TestGetRequests"></class>
-        </classes>
-    </test>
-</suite>
